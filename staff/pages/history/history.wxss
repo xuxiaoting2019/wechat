@@ -1,0 +1,140 @@
+/* pages/history/history.wxss */
+
+.container {
+  background-color: #f3f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 120rpx;
+  background-color: #00b366;
+  padding-top: 30rpx;
+}
+
+.inputWrapper {
+  width: 623rpx;
+  height: 60rpx;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 40rpx;
+  margin: auto;
+  display: flex;
+  flex: 0 0 1;
+  justify-content: flex-start;
+  line-height: 60rpx;
+}
+
+.search-icon {
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 14rpx 20rpx;
+}
+
+.input {
+  width: 550rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.input-place {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.tabNav {
+  background-color: #fff;
+  width: 100%;
+  height:90rpx;
+  display: flex;
+  flex: 0 0 1;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.tabItem {
+  height: 90rpx;
+  line-height: 90rpx;
+  box-sizing: border-box;
+}
+.tabItem-active {
+  color: #00b366;
+  border-bottom: 6rpx solid #00b366;
+  box-sizing: border-box;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.details {
+  width: 100%;
+  height: 218rpx;
+  background-color: #fff;
+  margin: 20rpx 0;
+  position: relative;
+}
+
+.content {
+  border-bottom: 1rpx solid #ebebeb;
+  height: 137rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  color: #96969a;
+  margin: auto auto 0;
+  width: calc(100% - 60rpx);
+}
+
+.row {
+  width: calc(100% - 60rpx);
+  margin: 0 auto auto;
+  display: flex;
+  flex: 0 0 1;
+  justify-content: space-between;
+}
+
+.row text {
+  margin-right: 30rpx;
+}
+
+.icon_arrow {
+  width: 38rpx;
+  height: 19rpx;
+  margin-right: 24rpx;
+}
+
+.tel {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 78rpx;
+}
+
+.footer {
+  height: 80rpx;
+  font-size: 24rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+}
+
+.data {
+  color: #999;
+}
+
+.printBtn {
+  width: 160rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  border-radius: 27rpx;
+  border: 1rpx solid #999999;
+  color: #999999;
+  font-size: 24rpx;
+  margin: 0;
+}

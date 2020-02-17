@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "pages": [
+    "pages/sender/sender",
+    "pages/receipt/receipt",
+    "pages/confirm/confirm",
+    "pages/ordering/ordering"
+  ]
+}

@@ -1,0 +1,65 @@
+<!-- 运单支付 -->
+<view class="content">
+  <image class="{{paymentType === 'order' ? 'img1' : 'img2'}}" src="../../assets/images/dingdan_bg.png"></image>
+
+  <!-- 运单支付 -->
+  <view class="order" wx:if="{{paymentType === 'order'}}">
+    <view class="title">
+      <text>订单号：{{orderNum}}</text>
+      <text>下单时间：{{orderTime}}</text>
+    </view>
+    <view class="center">
+      <view class="col">
+        <view>
+          <text class="city">成都市</text>
+          <text class="name">杨紫</text>
+        </view>
+      </view>
+      <image class="line" src="../../assets/images/bg_line.png"></image>
+      <view class="col">
+        <view>
+          <text class="city">上海市</text>
+          <text class="name">李现</text>
+        </view>
+      </view>
+    </view>
+    <view class="payment">
+      <text>邮政速递服务费</text>
+      <text class="money1">￥{{money}}</text>
+    </view>
+  </view>
+
+  <!-- 号牌支付 -->
+  <view class="plate"  wx:if="{{paymentType === 'plate'}}">
+    <view class="title">
+      <text>运单号：{{orderNum}}</text>
+    </view>
+    <view class="center">
+      <text class="plate-num">机动车牌: {{plateNum}}</text>
+      <view class="payment">
+        <text>邮政速递服务费</text>
+        <text class="money1">￥{{money}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 倒计时 -->
+  <view class="remaining-time" wx:if="{{paymentType === 'plate'}}">
+    <view>
+      <image class="remain-icon" src="../../assets/images/remainingTime.png"></image>
+    </view>
+    <view>
+      <text> 支付剩余时间：{{remainingTime}}</text>
+    </view>
+  </view>
+
+</view>
+
+<!-- 底部支付按钮 -->
+<view class="footer">
+  <view class="pay-title">
+    应付
+    <text class="money">￥{{money}}</text>
+  </view>
+  <view class="pay-btn" bindtap="goPay">微信支付</view>
+</view>

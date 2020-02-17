@@ -1,0 +1,8 @@
+<!-- placeorder.wxml -->
+<!-- 揽件员 订单详情 -->
+<view>
+  <view class="order-placeolder">
+    <briefly-info list='{{listData}}'></briefly-info>
+    <view class="button f-center" bindtap="goToSuccess">确定</view>
+  </view>
+</view>

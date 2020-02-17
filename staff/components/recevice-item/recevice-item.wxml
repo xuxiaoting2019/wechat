@@ -1,0 +1,22 @@
+<view class="list-item">
+  <view class="address p30 d-flex">
+    <text class="address-title h40">取件地：</text>
+    <text class="address-info h40">{{item.address}}</text>
+  </view>
+  <view class="order-person d-flex h40 p30">
+    <view class="person-info h40 d-flex">
+      <text>{{item.sendName}}</text><text hidden="{{!item.phone}}">（{{item.phone}}）</text>
+      <image src="../../assets/images/icon_arrow.png" class="to-image"></image>
+      <text>{{item.collectName}}</text>
+    </view>
+    <view class="person-call">
+      <image src="../../assets/images/icon_phone.png" class="call-image" bindtap="callToPerson"></image>
+    </view>
+  </view>
+  <view class="item-foot">
+    <text>今天 {{item.time}}</text>
+    <view class="button">
+      <button wx:for="{{ todoBtns }}" wx:for-item="btn" data-item="{{btn}}" class="button-item" bindtap="todo">{{btn.desc}}</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/receiving/ReceiptPage/ReceiptPage.wxml-->
+<view class="receipt">
+  <view class="receipt-content">
+    <view class="content-head">
+      <image class="image" src="../../../assets/images/shoukuan-.png"></image>
+      <text class="text">二维码收款</text>
+    </view>
+    <view class="content-content">
+      <view class="content-a">扫描二维码向我付款</view>
+      <view class="content-b">￥{{30.11}}</view>
+      <view class="content-c"></view>
+    </view>
+  </view>
+</view>

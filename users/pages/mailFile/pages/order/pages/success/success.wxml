@@ -1,0 +1,24 @@
+<view>
+  <view class="success">
+    <view class="success-banner d-flex f-center">
+      <view class="margin-r-10 margin-t-30">
+        <image class="order-success-icon" src="../../../../assets/images/successTip.png" />
+      </view>
+      <view class="font-color-white margin-t-30">
+        <view class="font-big-size">提交成功!</view>
+        <view class="font-small-size">等待接单中...</view>
+      </view>
+    </view>
+    <view class="success-bg d-flex h-center">
+      <image class="order-success-bg" src="../../../../assets/images/dingdan_bg.png" />
+      <view class="success-order">
+        <order-item dataObj="{{dataObj}}" bind:viewOrder="viewOrder"></order-item>
+      </view>
+    </view>
+  </view>
+  <!-- 按钮 -->
+  <view class="fixed-bottom d-flex">
+    <view class="success-btn success-back-btn" plain="{{true}}" bindtap="goBack">返回首页</view>
+    <view class="success-btn success-back-order" bindtap="goPage">再寄一单</view>
+  </view>
+</view>

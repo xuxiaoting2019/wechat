@@ -1,0 +1,28 @@
+<view>
+<view class="rowa">
+  <image src="{{img}}" class="row1"></image>
+  <view class="row2">
+  <view>寄件人：王天龙</view>
+  <view>电话：15283089779</view>
+  <view>地址：安徽省合肥市庐阳区天赋泸州308</view>
+  </view>
+</view>
+
+<view class="rowa">
+  <image src="{{img1}}" class="row1"></image>
+  <view class="row2">
+  <view>寄件人：王天龙</view>
+  <view>电话：15283089779</view>
+  <view>地址：安徽省合肥市庐阳区天赋泸州308</view>
+  </view>
+</view>
+
+<view class="ordering-message">
+ <view class="row-message">
+  <view>物品名称：王天</view>
+  <view>订单编号：15283089779</view>
+  </view>
+</view>
+
+<view class="submit-button" bindtap="order">确认</view>
+</view>

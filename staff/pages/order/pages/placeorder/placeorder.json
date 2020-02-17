@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "briefly-info": "../../../components/briefly-info/briefly-info"
+  },
+  "navigationBarTitleText": "订单确认"
+}

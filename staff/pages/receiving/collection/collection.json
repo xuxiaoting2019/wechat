@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "custom-dialog": "/components/custom-dialog/custom-dialog"
+  },
+  "navigationBarBackgroundColor": "#00B366",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "二维码收款",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

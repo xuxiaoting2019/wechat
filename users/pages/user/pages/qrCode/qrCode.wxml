@@ -1,0 +1,13 @@
+<view class="wrapper">
+  <view class="code-block">
+    <view class="code-title d-flex">
+      <image class="code-title-img" src="../../../../assets/images/jiedan-的副本.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+      <text class="code-title-content" selectable="false" space="false" decode="false">收件二维码</text>
+    </view>
+    <view class="f-center code-container">
+      <text class="code-content">扫二维码即刻寄件</text>
+      <image class="code-pic" src="../../../../assets/images/erweima-.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </view>
+  </view>
+</view>
+  

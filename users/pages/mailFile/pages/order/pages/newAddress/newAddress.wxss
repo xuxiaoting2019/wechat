@@ -1,0 +1,105 @@
+/* pages/order/pages/mailList/mailList.wxss */
+@import '../../../../../../assets/style/weui.wxss';
+@import '../../../../../../assets/style/base.wxss';
+
+.v-center{
+  align-items: center;
+}
+.h-center{
+  justify-content: center;
+}
+.both-sides{
+  justify-content: space-between;
+}
+.d-column{
+  flex-direction: column;
+}
+.border-bottom-1rpx{
+  border-bottom: 1rpx solid #F0F0F2;
+}
+.border-right-1rpx{
+  border-right: 1rpx solid #F0F0F2;
+}
+.fixed-top{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.fixed-bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.new-address{
+  background: #fff;
+  padding: 0 30rpx;
+}
+.form-address-img{
+  width: 40rpx;
+  height: 48rpx;
+}
+/* form */
+.form-cell{
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #F0F0F2;
+  position: relative;
+}
+.form-label{
+  min-width: 70rpx;
+  padding-right: 10rpx;
+}
+.form-name{
+  width: 40%;
+}
+.form-phone{
+  width: 55%;
+  padding-left: 5%;
+}
+.form-func{
+  border-bottom: none;
+}
+.form-cell-icon{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.voice-address{
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 30rpx;
+}
+.voice-address-content{
+  border: 1rpx solid #F0F0F2;
+  padding: 20rpx;
+  min-height: 120rpx;
+  position: relative;
+}
+.voice-address-desc{
+  font-size: 24rpx;
+  color: #999;
+  /* text-align: center; */
+}
+.voice-address-img{
+  position: absolute;
+  left: 20rpx;
+  bottom: 20rpx;
+  width: 40rpx;
+  height: 52rpx;
+}
+/* 按钮 */
+.mail-list-add{
+  height: 120rpx;
+}
+.mail-list-button{
+  width: 640rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 60rpx;
+  margin-top: 20rpx;
+}
+.button-add-icon{
+  font-size: 40rpx;
+}

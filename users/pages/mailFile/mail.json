@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    
+  },
+  "navigationBarTitleText": "寄件",
+  "navigationBarBackgroundColor": "#00B366",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh" : true
+}

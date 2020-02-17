@@ -1,0 +1,40 @@
+.row1 {
+  height: 30px;
+  width: 30px;
+  padding-left: 13px;
+  padding-top:13px;
+  /* float:left */
+}
+.row2 {
+  float: right;
+  margin-left: 10px;
+}
+.rowa {
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  background-color: white;
+  font-size: 12px;
+}
+.ordering-message {
+  float: center;
+  display: flex;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  font-size: 12px;
+}
+.row-message {
+  margin-left: 50px;
+  float: center;
+}
+
+.submit-button {
+  line-height:35px;
+  text-align: center;
+  margin: 140px 8px 0 8px;
+  background:#36ab60;
+  border-radius: 20px;
+  color:#fff;
+
+}

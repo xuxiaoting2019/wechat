@@ -1,0 +1,64 @@
+<!-- 接单模块 -->
+<!-- 搜索框 -->
+<view class="header">
+  <view class="input">
+    <image src="../../assets/images/search.png" class="image"></image>
+    <input type="text" class="search" placeholder="请输入商户号" cursor="-2"></input>
+  </view>
+</view>
+<!-- 导航条 -->
+<view class="nav">
+  <view class="tagg {{classNum==1?'nav_left':'nav_right'}}" bindtap="receive">
+    <text>等待接单</text>
+    <text class="{{classNum==1?'sign':''}}"></text>
+  </view>
+  <view class="tagg {{classNum==1?'nav_right':'nav_left'}}" bindtap="print">
+    <text>等待打单</text>
+    <text class="{{classNum==2?'sign':''}}"></text>
+  </view>
+</view>
+<!-- 订单列表 -->
+<view class="content" wx:if="{{condition}}">
+  <view class="content_item" wx:for="{{dataList}}">
+    <text class="item_head">取件地：{{item.address}}</text>
+    <view class="item_content">
+      <view class="item_content_left">
+        <text>{{item.out}} ({{item.phone}}) </text>
+        <image src="../../assets/images/icon_arrow.png" class="image"></image>
+        <text>{{item.come}}</text>
+      </view>
+      <image src="../../assets/images/icon_phone.png" class="images"></image>
+    </view>
+    <view class="item_foot">
+      <block>今天 {{item.time}}</block>
+      <view class="button">
+        <button class="button1" bindtap="refuse">拒单</button>
+        <button class="button2" bindtap="accept">接单</button>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 等待打单 -->
+<view class="content" wx:else>
+  <view class="content_item" wx:for="{{printList}}">
+    <text class="item_head">取件地：{{item.address}}</text>
+    <view class="item_content">
+      <view class="item_content_left">
+        <text>{{item.out}} ({{item.phone}}) </text>
+        <image src="../../assets/images/icon_arrow.png" class="image"></image>
+        <text>{{item.come}}</text>
+      </view>
+      <image src="../../assets/images/icon_phone.png" class="images"></image>
+    </view>
+    <view class="item_foot">
+      <block>今天 {{item.time}}</block>
+      <view class="button">
+        <button class="button2">打单</button>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 弹窗 -->
+<mp-dialog ext-class="ext-class" title="确认要拒单吗？" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '确认'}, {text: '取消'}]}}">
+</mp-dialog>
+

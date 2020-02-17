@@ -1,0 +1,52 @@
+/* pages/user/user.wxss */
+@import '../../assets/style/base.wxss';
+/* 头部样式 */
+page {
+  background-color: #F3F4F9;
+}
+.header-block {
+  height: 300rpx;
+  background: #00B366;
+  padding-top: 47rpx;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.portrait {
+  width: 165rpx;
+  height: 165rpx;
+  border-radius: 50%;
+  margin-bottom: 14rpx;
+}
+.nick-name {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  height: 42rpx;
+  color: #FFF;
+}
+/* 列表样式 */
+.list-block {
+  width: 100%;
+  background: #FFF;
+  padding-bottom: -1px;
+  font-size: 30rpx;
+  flex-direction: column;
+  color: #666666;
+}
+.list-item {
+  height: 116rpx;
+  align-items: center;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 0 31rpx 0 41rpx;
+}
+.list-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 25rpx;
+}
+.list-content {
+  line-height: 30rpx;
+}
+.list-right-icon {
+  width: 15rpx;
+  height: 32rpx;
+}

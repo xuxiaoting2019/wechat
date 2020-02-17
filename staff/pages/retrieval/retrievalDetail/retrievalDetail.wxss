@@ -1,0 +1,49 @@
+/* pages/retrieval/retrievalDetail/retrievalDetail.wxss */
+@import '../../../assets/style/base.wxss';
+.person-message {
+  padding: 0 30rpx;
+  background: #FFF;
+}
+.person-item-block {
+  padding: 30rpx 0;
+  border-bottom: 1px solid #EBEBEB;
+}
+.person-type {
+  margin-right: 25rpx;
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  background: #4F5BFF;
+  font-size: 24rpx;
+  color: #FFFFFF;
+}
+.person-block {
+
+}
+.person-item {
+  height: 40rpx;
+  margin-bottom: 14rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #000028;
+}
+.person-label {
+  display: inline-block;
+  color: #999999;
+  margin-right: 14rpx;
+}
+/* 物品信息 */
+.goods-message {
+  padding: 30rpx 0 72rpx 111rpx;
+  background: #FFF;
+  font-size: 28rpx;
+}
+.goods-item {
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-bottom: 14rpx;
+}
+.goods-label {
+  color: #999999;
+  margin-right: 14rpx;
+}

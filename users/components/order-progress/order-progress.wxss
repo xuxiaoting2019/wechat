@@ -1,0 +1,61 @@
+@import '../../assets/style/base.wxss';
+.v-center{
+    align-items: center;
+}
+.h-center{
+    justify-content: center;
+}
+.both-sides{
+    justify-content: space-between;
+}
+.d-column{
+    flex-direction: column;
+}
+.color-222{
+  color: #222;
+}
+.color-999{
+  color: #999;
+}
+.font-12{
+  font-size: 24rpx;
+}
+.font-14{
+  font-size: 28rpx;
+}
+.border-bottom-1px{
+    border-bottom: 1px dotted #F0F0F2;
+    margin: 30rpx 0;
+}
+.status-list{
+  background: #fff;
+}
+.status-item{
+  min-height: 160rpx;
+}
+.status-item:last-child{
+  min-height: 100rpx;
+}
+.status-item-left{
+}
+.status-item-line{
+  width: 1px;
+  height: 100%;
+  background: #f2f2f2;
+  margin: 0 auto;
+}
+.status-item-right{
+
+}
+.status-item-circle{
+  width: 38rpx;
+  height: 38rpx;
+  background: #00B366;
+  border-radius: 50%;
+  margin: 0 20rpx;
+}
+.status-item-circle.default{
+  background: #999999;
+}
+.status-item-txt{
+}

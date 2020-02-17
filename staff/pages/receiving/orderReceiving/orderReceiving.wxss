@@ -1,0 +1,140 @@
+@import '../../../assets/style/base.wxss';
+.order-refuse{
+  height: 100%;
+  border-top: 1px solid #EBEBEB;
+  position: relative;
+}
+
+.order-refuse .charging-box{
+  margin-top: 20rpx;
+  width:690rpx;
+  height:480rpx;
+  padding: 0 30rpx;
+  background: #FFF;
+}
+.charging-box .charging-item{
+  justify-content: space-between;
+  align-items: center;
+  height:120rpx;
+  border-bottom: 1rpx solid #EBEBEB;
+}
+.charge{
+  align-items: center;
+}
+.charging-key{
+  width: 120rpx;
+  height: 40rpx;
+  display: inline-block;
+  text-align: justify;
+  font-size: 28rpx;
+  color: #999999;
+}
+.charging-key::after{
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 0;
+}
+.charging-mark{
+  display: inline-block;
+  font-size: 28rpx;
+  color: #999999;
+}
+.charging-value{
+  display: inline-block;
+  font-size: 28rpx;
+  color: #00B366;
+}
+.charging-image{
+  width: 15rpx;
+  height: 28rpx;
+}
+.money-btn{
+  width: 750rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #FFF;
+  background: #00B366;
+}
+/* 弹出框 */
+.order-refuse .receipt-dialog{
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  height:calc(100% - 90rpx);
+  left: 0;
+  top: 0;
+  bottom:90rpx;
+  z-index: 99;
+  background: rgba(0,0,0,0.4);
+}
+.receipt-dialog .dialog-content{
+  width: 750rpx;
+  position: absolute;
+  bottom: 0;
+  background: #FFF;
+}
+.dialog-content .title-box{
+  width: 750rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: #FFF;
+  background: #00B366;
+  justify-content: space-between;
+}
+.title-box .title{
+  width: 686rpx;
+  text-align:center;
+}
+.title-box .close{
+  width: 32rpx;
+  height: 32rpx;
+  padding-right: 30rpx;
+}
+.content {
+  width: 750rpx;
+}
+.content .type,.radio-group{
+  width: 694rpx;
+  height: 90rpx;
+  padding: 0 30rpx;
+  line-height: 90rpx;
+  text-align: left;
+  font-size: 28rpx;
+  color: #999999;
+  background: #EBEBEB;
+}
+.radio-group{
+  background: #FFF;
+  justify-content: flex-start;
+}
+.radio-group .radio{
+  width: 33%;
+}
+.radio-text{
+  color: rgba(0,0,0,0.68);
+  font-size: 28rpx;
+}
+/*radio未选中时样式 */ 
+radio .wx-radio-input{ 
+  height: 36rpx; 
+  width: 36rpx;
+  border-radius: 50%;
+  border: 2rpx solid #999;
+ }
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input-checked {
+  background-color: transparent !important;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before {
+ /* 去除对号 */
+ content: ''; 
+ width: 28rpx;
+ height: 28rpx;
+ border-radius: 50%;
+ background-color: #00B366;
+}

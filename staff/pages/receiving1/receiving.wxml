@@ -1,0 +1,37 @@
+<!-- 接单模块 -->
+<!-- 搜索框 -->
+<view class="header">
+  <view class="input">
+    <image src="../../assets/images/search.png" class="image"></image>
+    <input type="text" class="search" placeholder="请输入商户号" cursor="-2"></input>
+  </view>
+</view>
+<!-- 导航条 -->
+<view class="nav">
+  <view wx:for="{{ navArr }}" class="tagg {{ type === item.index ? 'active' : '' }}" data-item="{{ item }}" bindtap="changeNav">
+    <text>{{ item.name }}</text>
+    <text hidden="{{type !== item.index }}" class="sign"></text>
+  </view>
+</view>
+<!-- 订单列表 -->
+<view class="order-list">
+  <view class="order-item" wx:for="{{ dataList }}">
+    <text class="order-address h40 m30">取件地：{{item.address}}</text>
+    <view class="order-person h40 m30">
+        <text>{{ item.out }}</text> <text class="" hidden="{{ item.phone }}">({{ item.phone }})</text>
+        <image src="../../assets/images/icon_arrow.png" class="image"></image>
+        <text>{{item.come}}</text>
+    </view>
+    <view class="item-foot">
+      <block>今天 {{item.time}}</block>
+      <view class="button">
+        <button class="button-item" bindtap="refuse">拒单</button>
+        <button class="button-item" bindtap="accept">接单</button>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 弹窗 -->
+<custom-dialog ext-class="ext-class" title="确认要拒单吗？" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '确认'}, {text: '取消'}]}}">
+</custom-dialog>
+

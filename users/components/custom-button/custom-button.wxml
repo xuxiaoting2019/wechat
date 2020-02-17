@@ -1,0 +1,3 @@
+<view class="custom-button">
+  <button class="button-style" type="{{btnType}}" bindtap="_clickBtn">{{btnText}}</button>
+</view>

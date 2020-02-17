@@ -1,0 +1,100 @@
+/* 搜索框 */
+@import '../../assets/style/base.wxss';
+.recevice-index{
+  width: 750rpx;
+  background: #EBEBEB;
+}
+.head-box{
+  width: 750rpx;
+  height: 106rpx;
+  background: #00B366;
+  padding: 0 63rpx;
+}
+.input-box{
+  width: 584rpx;
+  height: 40rpx;
+  padding: 10rpx 30rpx 10rpx 30rpx;
+  border-radius: 40rpx;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.8);
+}
+.input-box .input-sousuo{
+  width: 33rpx;
+  height: 37rpx;
+  padding-right: 13rpx;
+  color: #00B366;
+}
+.input-box .search{
+  width: 540rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #666666;
+}
+/* tab-bar */
+.recevice-tab{
+  width: 750rpx;
+  height: 90rpx;
+  padding: 0 19rpx;
+  background: #FFF;
+}
+.tab-box{
+  padding: 24rpx 107rpx;
+  justify-content: space-between;
+  position: relative;
+  font-size: 30rpx;
+  color: #999999;
+}
+.tab-box.active{
+  color: #00B366;
+}
+.tab-box.active:after{
+  content:'';
+  width: 80rpx;
+  height: 6rpx;
+  background: #00B366;
+  position: absolute;
+  bottom: 4rpx;
+  left: 38%;
+}
+
+/* 弹窗 */
+.ext-class .weui-dialog {
+  width: 560rpx;
+  height: 234rpx;
+  position: relative;
+  background:rgba(255,255,255,1);
+  border-radius:4px;
+}
+.ext-class .weui-dialog__hd {
+  height: 145rpx;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.ext-class .weui-dialog__hd .weui-dialog__title {
+  margin: 0 auto;
+  font-size: 32rpx;
+  color: #666666;
+}
+.ext-class .weui-dialog__bd {
+  padding: 0;
+  margin: 0;
+  height: 0;
+  width: 0;
+}
+.ext-class .weui-dialog__ft {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 88rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+}
+.ext-class .weui-dialog__btn_default {
+  color: #999999;
+}
+.ext-class .weui-dialog__btn_primary {
+  color: #00B366;
+}

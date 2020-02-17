@@ -1,0 +1,52 @@
+<wxs module="OrderState" src="../../../../app.wxs"></wxs>
+<view>
+  <view class="check-detail">
+    <!-- 寄、收、信息 -->
+    <view class="detail-user-info">
+      <briefly-info list="{{list}}"></briefly-info>
+      <!-- 当前状态 -->
+      <view class="detail-current-status">
+        <text class="color-primary">当前状态：</text>
+        <text class="color-999">{{OrderState.OrderState(dataObj.orderState)}}</text>
+        <!-- <text class="color-999">{{OrderState.OrderState[dataObj.orderState]}}</text> -->
+      </view>
+    </view>
+    <!-- 快递员信息 -->
+    <view class="detail-staff-info d-flex both-sides">
+      <view class="d-flex v-center">
+        <image class="staff-img" src="../../../../assets/images/touxiang.png"/>
+        <view class="margin-l-20">
+          <view class="font-small-size">快递小哥</view>
+          <view class="font-big-size">黄志博</view>
+        </view>
+      </view>
+      <view class="d-flex d-column h-center" bindtap="phoneCall">
+        <image class="staff-icon" src="../../../../assets/images/tel.png" />
+        <view class="font-small-size">电话</view>
+      </view>
+    </view>
+    <!-- 订单进度 -->
+    <view class="detail-order-progress">
+      <order-progress dataList="{{dataList}}"></order-progress>
+    </view>
+    <!-- 按钮 -->
+    <!-- <view class="detail-btn">
+      <custom-button btnType="primary" bind:clickBtn="clickBtn" btnText="删除"></custom-button>
+    </view>
+    <view class="detail-btn">
+      <custom-button bind:clickBtn="clickBtn" btnText="取消订单"></custom-button>
+    </view> -->
+    <view class="detail-btn d-flex both-sides">
+      <view class="width-48">
+        <custom-button bind:clickBtn="clickBtn" btnText="取消订单"></custom-button>
+      </view>
+      <view class="width-48">
+        <custom-button btnType="primary" bind:clickBtn="clickBtn" btnText="编辑"></custom-button>
+      </view>
+    </view>
+    <!-- 订单已取消 删除按钮 -->
+    <!-- 已下单 取消按钮 -->
+    <!-- 已提交 取消按钮 编辑按钮 -->
+  </view>
+</view>
+  

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "order-item": "../../components/order-item/order-item"
+  },
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#00B366",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh" : true
+}

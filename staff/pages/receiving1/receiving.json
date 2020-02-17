@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "custom-dialog": "/components/custom-dialog/custom-dialog"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#00B366",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#00B366",
+  "enablePullDownRefresh": true
+}

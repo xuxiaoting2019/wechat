@@ -1,0 +1,16 @@
+<view>
+  <!-- 头部样式 -->
+  <view class="header-block f-center">
+    <image class="portrait" src="{{ userInfo.avatarUrl }}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    <view class="nick-name" selectable="false" space="false" decode="false">{{ userInfo.nickName }}</view>
+  </view>
+  <!-- 用户功能列表 -->
+  <view class="list-block d-flex">
+    <view class="list-item d-flex" wx:for="{{ functionList }}" bindtap="goToDetail" data-item="{{ item }}" wx:for-index="{{index}}" wx:key="{{index}}">
+      <image class="list-icon" src="{{ item.leftIcon }}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+      <text class="list-content flex1" selectable="false" space="false" decode="false">{{ item.name }}</text>
+      <image class="list-right-icon" src="../../assets/images/next.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </view>
+  </view>
+</view>
+  

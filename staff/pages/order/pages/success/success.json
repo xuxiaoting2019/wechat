@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "order-item": "../../../../components/order-item/order-item"
+  },
+  "navigationBarTitleText": "邮政速递",
+  "navigationBarBackgroundColor": "#00B366",
+  "navigationBarTextStyle": "white"
+}

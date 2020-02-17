@@ -1,0 +1,81 @@
+<view>
+  <!-- 收寄件人信息 -->
+  <view class="order-person">
+    <view wx:for="{{ personForm }}" wx:key="item.lable">
+      <view class="order-person-item">
+        <text class="order-person-type f-center">{{ item.typeName }}</text>
+        <view class="order-person-message">
+          <view class="order-person-label">{{ item.label }}</view>
+          <view class="order-person-value" bindtap="goToAddress" data-item="{{ item }}">
+            {{ item.value || '点击填写收件人信息' }}
+          </view>
+        </view>
+        <image class="order-person-img" src="../../../../assets/images/address.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" data-item="{{ item }}" bindtap="goToList" />
+      </view>
+    </view>
+  </view>
+  <!-- 产品类型和物品信息 -->
+  <view class="order-detail">
+    <view class="order-detail-item" wx:for="{{ orderDetailForm }}" wx:key="item">
+      <!-- <picker class="" mode="selector|multiSelector|time|date|region" range="[]" range-key="" value="" disabled="false" bindchange="" bindcancel="">
+        aaa
+      </picker> -->
+      <text class="order-detail-label">{{ item.label }}</text>
+      <text class="order-detail-value f-center" bindtap="open" data-lable='{{item.label}}'>
+        {{ item.value || '请选择'}} >
+      </text>
+    </view>
+  </view>
+  <!-- 协议及下单按钮 -->
+  <view class="checkout f-center">
+    <view class="agreement">
+      <radio-group bindchange="radioChange">
+        <radio checked="{{ radioCheck }}" class="check-radio">
+          我已同意
+          <text class="agreement-link">《快递服务协议》</text>
+        </radio>
+      </radio-group>
+    </view>
+    <view class="button f-center" bindtap="goToOrder">下单</view>
+  </view>
+  <mp-halfScreenDialog title="{{dialogTitle}}" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view slot="desc" wx:if="{{dialogTitle === '物品信息'}}">
+      <view class="order-dialog-wrapper">
+        <text class="order-dialog-tit padding20">选择物品类型</text>
+        <view class="order-dialog-check padding20">
+          <!-- <checkbox-group bindchange="checkboxChange" class="check">
+            <label class="checkbox1" wx:for="{{goodInfodata}}" wx:key="item">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}">{{item.name}}</checkbox>
+            </label>
+          </checkbox-group> -->
+          <view class="order-dialog-itembox">
+            <view wx:for="{{goodInfodata}}" wx:key="item.index" data-index="{{index}}" class="order-dialog-item {{item.checked ? 'order-dialog-checked' : ''}}" bindtap="chooseSign" data-item="{{item}}">
+              {{item.name}}
+            </view>
+          </view>
+        </view>
+        <view>
+          <input class="weui-input" placeholder="请输入内件信息" type="text" placeholder-style="color:#9f9f9f" bindblur="inputBlur" />
+        </view>
+        <text class="order-dialog-info">
+          禁寄物品：各种枪支弹药、易燃易爆、化学危险品、毒品、各类生化制品、传染性感染性物质、各类非法伪造/侵权物品...
+        </text>
+      </view>
+    </view>
+    <view slot="desc" wx:if="{{dialogTitle === '产品类型'}}">
+      <view class="order-dialog-wrapper">
+        <text class="order-dialog-tit padding20">付款方</text>
+        <radio-group class="radio-group">
+          <label class="radio">
+            <radio value="" checked="" />
+            快递包裹
+          </label>
+          <label class="radio">
+            <radio value="" checked="" />
+            标准快递
+          </label>
+        </radio-group>
+      </view>
+    </view>
+  </mp-halfScreenDialog>
+</view>

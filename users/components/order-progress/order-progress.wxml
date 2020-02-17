@@ -1,0 +1,18 @@
+<wxs src="./filter.wxs" module="filter" />
+<view class="status-list">
+  <view class="status-item d-flex" wx:for="{{dataList}}" wx:key="{{index}}">
+    <view class="status-item-left text-center">
+      <view class="color-222 font-14">{{filter.month(item.bizOccurdate)}}</view>
+      <view class="color-999 font-12">{{filter.time(item.bizOccurdate)}}</view>
+    </view>
+    <view class="status-item-mid">
+      <view class="status-item-circle {{'default'}}"></view>
+      <view hidden="{{dataList.length - 1 === index}}" class="status-item-line"></view>
+    </view>
+    <view class="status-item-right font-14">
+      <view class="status-item-txt color-222 {{'color-999'}}">
+        {{item.orderState}}
+      </view>
+    </view>
+  </view>
+</view>

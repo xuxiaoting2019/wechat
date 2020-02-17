@@ -1,0 +1,52 @@
+<!-- pages/order/pages/mailList/mailList.wxml -->
+<view>
+  <view class="new-address">
+    <view class="d-flex">
+      <view class="form-cell d-flex form-name">
+        <text class="form-label">姓名</text>
+        <input class="weui-input border-right-1rpx" placeholder="" />
+      </view>
+      <view class="form-cell d-flex form-phone">
+        <text class="form-label">电话</text>
+        <input class="weui-input" type="number" placeholder="" />
+      </view>
+    </view>
+    <view class="form-cell form-city">
+      <!-- <input class="weui-input" placeholder="省市区" /> -->
+      <view class="section">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <text class="form-city">省市区</text>
+          <view class="picker form-city-data">{{region[0]}} {{region[1]}} {{region[2]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="form-cell form-address">
+      <textarea placeholder="详细地址（精确到门牌号）" auto-height class="form-cell-location" />
+      <view class="form-cell-icon" bindtap="goToLocation">
+        <image class="form-address-img" src="../../../../assets/images/icon_location.png"></image>
+      </view>
+    </view>
+    <view class="form-cell d-flex both-sides form-func">
+      <view>
+        <radio class="radio mail-item-radio" checked="{{defaultRadio}}" bindtap="setDefault">
+          <text>设置为默认地址</text>
+        </radio>
+      </view>
+      <view>
+        <text>清空当前信息</text>
+      </view>
+    </view>
+  </view>
+  <view class="voice-address">
+    <view class="voice-address-content">
+      <textarea placeholder="粘贴地址信息，自动拆分姓名、电话和地址，也可以语音输入" auto-height class="form-cell-address" />
+      <image class="voice-address-img" src="../../../../assets/images/icon_mic1.png" />
+    </view>
+    <!-- <view class="voice-address-content">
+      <view class="voice-address-desc">粘贴地址信息，自动拆分姓名，电话和地址，也可语音输入</view>
+    </view> -->
+  </view>
+  <view class="mail-list-add d-flex flex-center fixed-bottom">
+    <button type="primary" class="mail-list-button" bindtap="addMessage">新增</button>
+  </view>
+</view>

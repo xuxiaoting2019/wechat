@@ -1,0 +1,174 @@
+/* pages/platePost/platePost.wxss */
+page {
+  background-color: #F3F4F9;
+}
+
+.header {
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 1rpx solid #ebebeb;
+}
+
+.title {
+  width: 100%;
+  height: 42rpx;
+  line-height: 42rpx;
+  font-size: 30rpx;
+  border-left: 10rpx solid rgba(0, 179, 102, 1);
+  padding-left: 12rpx;
+  margin-left: 43rpx;
+}
+
+.network, .numInfo, .receiveInfo {
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.wrap {
+  margin: 0 36rpx;
+}
+
+.row {
+  height: 102rpx;
+  line-height: 102rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1rpx solid #ebebeb;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  width: 143rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.row picker {
+  width: calc(100% - 143rpx);
+}
+
+.datas {
+  width: 482rpx;
+  font-size: 30rpx;
+  color: #000028;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.datas text {
+  display: inline-block;
+}
+
+.next-icon {
+  width: 15rpx;
+  height: 28rpx;
+  display: inline-block;
+}
+
+.plateTitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx 38rpx;
+  height: 42rpx;
+  font-size: 30rpx;
+  color: rgba(0, 0, 40, 1);
+  line-height: 42rpx;
+}
+
+.plateNum {
+  width: 623rpx;
+  height: 80rpx;
+  border-radius: 4rpx;
+  border:1px solid rgba(36, 19, 8, .5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx auto;
+}
+
+.commonCar {
+  background: rgba(22, 63, 227, 0.5);
+}
+
+.newEnergy {
+  background: linear-gradient(180deg,rgba(215,223,229,.5) 0%,rgba(41,206,93,.5) 100%);
+}
+
+.motor {
+  background:rgba(254, 220, 25, 0.5);
+}
+
+.d-flex {
+  display: flex;
+  flex: 1;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-width: 15rpx;
+  border-style: solid;
+  border-color: #00b366 transparent transparent transparent;
+  margin-top: 15rpx;
+  margin-left: 9rpx;
+}
+
+.plateNum view {
+  width: 87rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+  color: rgba(0, 0, 40, 1);
+  display: inline-block;
+  border-right: 1rpx solid rgba(36, 19, 8, .5);
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.plateNum view:last-child {
+  border-right: none;
+}
+
+.agreement {
+  height: 42rpx;
+  font-size: 30rpx;
+  color: rgba(0, 0, 40, 1);
+  line-height: 42rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 38rpx;
+  margin-right: 38rpx;
+}
+
+.radio {
+  width: auto;
+}
+
+.look-notice {
+  height: 42rpx;
+  font-size: 30rpx;
+  color: rgba(0, 179, 102, 1);
+  line-height: 42rpx;
+}
+
+.nextBtn {
+  width: 623rpx;
+  height: 80rpx;
+  background: rgba(0, 179, 102, 1);
+  border-radius: 60rpx;
+  margin: 64rpx auto;
+  color: white;
+  line-height: 80rpx;
+}
+
+.no-border-bottom {
+  border-bottom: none;
+}

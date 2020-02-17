@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#00B366",
+  "navigationBarTitleText": "运单支付",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#F3F4F9"
+}

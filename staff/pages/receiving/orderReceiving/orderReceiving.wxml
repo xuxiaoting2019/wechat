@@ -1,0 +1,46 @@
+ 
+<view class="order-refuse">
+  <!-- 收寄信息 -->
+  <briefly-info list="{{listData}}"></briefly-info>
+  <!-- 计费信息选择 -->
+  <view class="charging-box">
+    <view class="charging-item d-flex" wx:for="{{chargingArr}}">
+      <view class="charge d-flex">
+        <text class="charging-key">{{item.key}}</text>
+        <text class="charging-mark">：</text>
+        <text class="charging-value">{{item.val}}</text>
+      </view>
+      <view class="charging-image">
+        <image src="../../../assets/images/next.png" class="charging-image"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 收费btn -->
+  <view class="money-btn" bindtap="showDailog">
+    <text>收费（30元）</text>
+  </view>
+  <!-- 弹窗 -->
+  <view class="receipt-dialog" wx:if="{{isShowDia}}">
+    <view class="dialog-content">
+      <view class="title-box d-flex">
+        <view class="title">收款</view>
+        <view bindtap="close">
+          <image src="../../../assets/images/close.png" class="close"></image>
+        </view>
+      </view>
+      <view class="content" wx:for="{{radioList}}" wx:for-item="item" wx:for-index="index">
+        <view class="type">{{item.type}}</view>
+        <radio-group class="radio-group d-flex" bindchange="radioChange">
+          <radio class="radio d-flex" 
+                 wx:for="{{item.radios}}"  
+                 wx:for-item="child"
+                 wx:for-index="childIndex"
+                 value="{{child.value}}"
+                 checked="{{child.checked}}">
+            <text class="radio-text">{{child.label}}</text>
+          </radio>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+</view>

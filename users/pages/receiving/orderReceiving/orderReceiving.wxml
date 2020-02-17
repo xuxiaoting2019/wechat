@@ -1,0 +1,141 @@
+<!-- 接单数据 -->
+<view class="order-head">
+  <!-- 寄件 -->
+  <view class="sender">
+    <view class="sender-left">寄</view>
+    <view class="sender-right">
+      <view class="senders">
+        <view class="tag">寄件人</view>
+        <text style="color:#999999">:</text>
+        <view class="text1">{{"张三"}}</view>
+      </view>
+      <view class="phone">
+        <view class="tag">电　话</view>
+        <text style="color:#999999">:</text>
+        <view class="text1">{{"1381111111"}}</view>
+      </view>
+      <view class="addres">
+        <view class="tag">地　址</view>
+        <text style="color:#999999">:</text>
+        <view class="text1">{{"北京市北京北京市北京北京北"}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 收件 -->
+  <view class="addressee sender">
+    <view class="sender-left" style="background:#00B366">收</view>
+    <view class="sender-right">
+      <view class="senders">
+        <view class="tag">收件人</view>
+        <text style="color:#999999">:</text>
+        <view class="text1">{{"张三"}}</view>
+      </view>
+      <view class="phone">
+        <view class="tag">电　话</view>
+        <text style="color:#999999">:</text>
+        <view class="text1">{{"1381111111"}}</view>
+      </view>
+      <view class="addres">
+        <view class="tag">地　址</view>
+        <text style="color:#999999">:</text>
+        <view class="text1">{{"北京市北市北京市北京市北京市"}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 货物 -->
+  <view class="article sender">
+    <view class="sender-right">
+      <view class="senders">
+        <view class="tag" style="width:112rpx">物品名称</view>
+        <text style="color:#999999">:</text>
+        <view class="text1">{{"张三"}}</view>
+      </view>
+      <view class="phone">
+        <view class="tag" style="width:112rpx">下单时间</view>
+        <text style="color:#999999">:</text>
+        <view class="text1">{{"2019-01-22 13:21"}}</view>
+      </view>
+      <view class="addres">
+        <view class="tag" style="width:112rpx">取件地址</view>
+        <text style="color:#999999">:</text>
+        <view class="text1">{{"北京市北京市北京市北京市北京市北京市北京市北京市北京市京市"}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 详细 -->
+<view class="order-content">
+  <view class="order-content-item">
+    <view class="order-content-item-left">
+      <view class="tag">快递公司</view>
+      <text style="color:#999999">:</text>
+      <view class="pag">{{"啦啦啦"}}</view>
+    </view>
+    <view class="iconfont icon-you"></view>
+  </view>
+  <view class="order-content-item">
+    <view class="order-content-item-left">
+      <view class="tag">快递单号</view>
+      <text style="color:#999999">:</text>
+      <view class="pag">{{"啦啦啦"}}</view>
+    </view>
+    <view class="iconfont icon-you"></view>
+  </view>
+  <view class="order-content-item">
+    <view class="order-content-item-left">
+      <view class="tag">重　　量</view>
+      <text style="color:#999999">:</text>
+      <view class="pag">{{"啦啦啦"}}</view>
+    </view>
+    <view class="iconfont icon-you"></view>
+  </view>
+  <view class="order-content-item">
+    <view class="order-content-item-left">
+      <view class="tag">运　　费</view>
+      <text style="color:#999999">:</text>
+      <view class="pag">{{"啦啦啦"}}</view>
+    </view>
+    <view class="iconfont icon-you"></view>
+  </view>
+</view>
+<!-- 收款 -->
+<view class="gathering">
+  <button class="money-button" bindtap="clickme">
+    收款 
+  <text> ( {{money}}元 )</text>
+  </button>
+</view>
+
+<!-- 弹窗 -->
+<view class="commodity_screen" wx:if="{{showModalStatus}}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <view class="dialog-head">
+    <view>收款</view>
+    <image class="image" src="../../../assets/images/close.png" bindtap="hideModal"></image>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class="fs">付款方式</view>
+    <view class="ds">
+      <radio-group name="radio-group" class="radio-group" bindchange="radioCheckedChange1">
+        <label class="radio item {{classNuma==1?'checkedcolor':''}}"><radio value="1" checked="true"/>寄付</label>
+        <label class="radio item {{classNuma==2?'checkedcolor':''}}"><radio value="2"/>到付</label>
+      </radio-group>
+    </view>
+    <view class="fs">支付方式</view>
+    <view class="ds">
+      <radio-group name="radio-group" class="radio-group" bindchange="radioCheckedChange2">
+        <label class="radio items {{classNumb==3?'checkedcolor':''}}"><radio value="3" checked="true"/>电子支付</label>
+        <label class="radio items {{classNumb==4?'checkedcolor':''}}"><radio value="4"/>现金支付</label>
+        <label class="radio items {{classNumb==5?'checkedcolor':''}}"><radio value="5"/>协议结算</label>
+      </radio-group>
+    </view>
+    <view class="fs">结算方式</view>
+    <view class="ds">
+      <radio-group name="radio-group" class="radio-group" bindchange="radioCheckedChange3">
+        <label class="radio item {{classNumc==6?'checkedcolor':''}}"><radio value="6" checked="true"/>现结</label>
+        <label class="radio item {{classNumc==7?'checkedcolor':''}}"><radio value="7"/>记欠</label>
+      </radio-group>
+    </view>
+  </form>
+</view>

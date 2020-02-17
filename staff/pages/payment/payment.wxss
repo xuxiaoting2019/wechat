@@ -1,0 +1,181 @@
+/* 运单支付 */
+page {
+  border-top: 84rpx solid #00B366;
+  box-sizing: border-box;
+  background-color: #F3F4F9;
+}
+.content {
+  margin-top: -63rpx;
+}
+.img1 {
+  width: 690rpx;
+  height: 440rpx;
+  margin: 0 auto;
+  display: block;
+}
+.img2 {
+  width: 690rpx;
+  height: 335rpx;
+  margin: 0 auto;
+  display: block;
+}
+/* 订单支付 */
+.order {
+  width: 660rpx;
+  height: 410rpx;
+  margin: -400rpx 45rpx 0;
+}
+.order .title {
+  width: calc(100% -60rpx);
+  height:84rpx;
+  font-size:28rpx;
+  color:rgba(153,153,153,1);
+  line-height:40rpx;
+  padding: 35rpx 44rpx;
+  border-bottom: 1rpx dashed #CCCCCC;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.order .center {
+  height: 180rpx;
+  line-height: 180rpx;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1rpx dashed #CCCCCC;
+}
+.order .center .col {
+  margin: auto 0;
+}
+.order .center .col view {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.order .center .col view .city {
+  width:110rpx;
+  height:50rpx;
+  font-size:36rpx;
+  color:rgba(1,0,40,1);
+  line-height:50rpx;
+}
+.order .center .col view .name {
+  width:58rpx;
+  height:40rpx;
+  font-size:28rpx;
+  color:rgba(153,153,153,1);
+  line-height:40rpx;
+}
+.order .center .line {
+  width:155rpx;
+  height:10rpx;
+  margin: 68rpx 0 auto;
+}
+.order .payment {
+  height: 68rpx;
+  line-height: 68rpx;
+  padding: 0 44rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size:28rpx;
+  color: #000028;
+}
+.order .payment .money1 {
+  font-size:36rpx;
+  color:#F81212;
+}
+/* 共用底部支付 */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 123rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  line-height: 123rpx;
+  z-index: 40;
+}
+.pay-title {
+  width: 514rpx;
+  padding-left: 38rpx;
+}
+.money {
+  font-size:48rpx;
+  color:#F81212;
+}
+.pay-btn {
+  width:236rpx;
+  background-color: #00B366;
+  text-align: center;
+  color: #fff;
+}
+
+/* 号牌支付 */
+.plate {
+  width: 660rpx;
+  height: 335rpx;
+  margin: -330rpx 45rpx 0;
+}
+.plate .title {
+  width: calc(100% -60rpx);
+  height:130rpx;
+  font-size:28rpx;
+  color:rgba(153,153,153,1);
+  line-height:130rpx;
+  border-bottom: 1rpx dashed #CCCCCC;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.plate .title text {
+  margin-left: 44rpx;
+}
+.plate .center {
+  height: 204rpx;
+  line-height: 204rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 44rpx;
+}
+.plate .center .plate-num {
+  height:50rpx;
+  font-size:36rpx;
+  font-weight:600;
+  color:rgba(0,0,40,1);
+  line-height:50rpx;
+}
+.plate .center .payment {
+  height: 68rpx;
+  line-height: 68rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size:28rpx;
+  color: #000028;
+}
+.plate .center .payment .money1 {
+  font-size:36rpx;
+  color:#F81212;
+}
+.remaining-time {
+  height:33rpx;
+  line-height:33rpx;
+  width: 100%;
+  margin: 38rpx auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.remain-icon {
+  width:33rpx;
+  height:33rpx;
+}
+.remaining-time view text {
+  height: 33rpx;
+  line-height: 33rpx;
+  font-size: 24rpx;
+  font-weight:400;
+  color:rgba(248,18,18,1);
+}

@@ -1,0 +1,54 @@
+.row-a {
+  line-height: 100px;
+  background-color:#36ab60;
+  color:white;
+  text-align: center;
+}
+.ordering {
+  line-height:50px;
+  display: flex;
+  background-color:white;
+ text-align: center;
+  color:#ccc;
+  font-size:15px;
+  border-bottom:1px #ccc dashed;
+}
+.ordering-address {
+  line-height: 80px;
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: #ccc 1px dashed;
+}
+.read-ordering {
+  line-height:40px;
+  text-align: center;
+  color: #36ab60;
+  background-color: #fff
+}
+.submit-button1 {
+  width: 135px;
+  line-height:35px;
+  text-align: center;
+  margin: 140px 8px 0 8px;
+  background:white;
+  border-radius: 20px;
+  color: #36ab60;
+  border:1px solid #36ab60;
+}
+.submit-button2 {
+  width: 135px;
+  line-height:35px;
+  text-align: center;
+  margin: 140px 8px 0 8px;
+  background:#36ab60;
+  border-radius: 20px;
+  color:#fff;
+  border:1px solid #36ab60;
+}
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px
+}

@@ -1,0 +1,17 @@
+/* pages/order/placeorder.wxss */
+@import '../../../../assets/style/base.wxss';
+page {
+  background-color: #F3F4F9;
+} 
+.button {
+    width: 623rpx;
+    height: 80rpx;
+    border-radius: 60rpx;
+    color: #FFF;
+    background: #00B366;
+    font-size: 32rpx;
+    position: fixed;
+    bottom: 50rpx;
+    left: 50%;
+    transform: translateX(-50%);
+  }

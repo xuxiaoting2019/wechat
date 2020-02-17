@@ -1,0 +1,134 @@
+/* pages/order/pages/mailList/mailList.wxss */
+@import '../../../../../../assets/style/weui.wxss';
+@import '../../../../../../assets/style/base.wxss';
+
+.v-center{
+  align-items: center;
+}
+.h-center{
+  justify-content: center;
+}
+.both-sides{
+  justify-content: space-between;
+}
+.d-column{
+  flex-direction: column;
+}
+.border-bottom-1rpx{
+  border-bottom: 1rpx solid #F0F0F2;
+}
+.fixed-top{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.fixed-bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* search */
+.mail-list-search{
+  background: #fff;
+  height: 120rpx;
+  padding: 0 30rpx;
+}
+.mail-list-search-inner{
+  border-radius: 40rpx;
+  background: #F3F4F9;
+  width: 100%;
+  height: 68rpx;
+  padding: 0 30rpx;
+}
+.mail-list-search-img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.mail-list-search-input{
+  height: 100%;
+}
+/* list */
+.mail-list-item{
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 30rpx 0;
+}
+.mail-list-item:last-child{
+  margin-bottom: 20rpx;
+}
+/* 文字信息 */
+.mail-list-item-info{
+  padding: 0 30rpx 10rpx;
+}
+.mail-list-item-title{
+  color: #111;
+  font-size: 38rpx;
+}
+.mail-list-item-address{
+  color: #777;
+  line-height: 64rpx;
+}
+/* 功能效果 */
+.mail-list-item-function{
+  color: #777;
+  padding: 30rpx 30rpx 0;
+}
+.mail-item-func-icon{
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 15rpx;
+}
+.func-edit{
+  margin-right: 50rpx;
+}
+.no-more{
+  /* width: 100%; */
+  padding: 20rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #999;
+}
+/* 复选框样式 */
+.checkbox .wx-checkbox-input{
+  border-radius: 50%;/* 圆角 */
+  width: 40rpx; /* 背景的宽 */
+  height: 40rpx; /* 背景的高 */
+}
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  background: #07c160;
+  border-color: #07c160;
+}
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  border-radius: 50%;
+  width: 46rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  text-align: center;
+  font-size: 28rpx; /* 对勾大小 28rpx */
+  color: #fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+.checkbox-label{
+  position: absolute;
+  left: 12%;
+}
+/* 按钮 */
+.mail-list-add{
+  height: 120rpx;
+  background: #fff;
+}
+.mail-list-button{
+  width: 640rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 60rpx;
+  margin-top: 20rpx;
+}
+.button-add-icon{
+  font-size: 40rpx;
+}

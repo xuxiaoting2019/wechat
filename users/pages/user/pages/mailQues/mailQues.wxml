@@ -1,0 +1,6 @@
+<view class="title">寄件问题</view>
+<view class="container">
+  <view wx:for="{{ questionList }}" wx:key="{{index}}" class="li" bindtap="quesBtn">
+    {{ item.title }}
+  </view>
+</view>

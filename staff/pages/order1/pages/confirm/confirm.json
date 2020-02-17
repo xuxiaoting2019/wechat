@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/order/order",
+    "pages/index/index",
+    "pages/index/plate/plate",
+    "pages/receiving/receivingr",
+    "pages/retrieval/retrieval",
+    "pages/retrieval/retrievalDetail/retrievalDetail",
+    "pages/history/history",
+    "pages/user/user",
+    "pages/receiving/receiptPage/receiptPage",
+    "pages/receiving/orderReceiving/orderReceiving",
+    "pages/ordering/ordering"
+  ],
+  "window": {
+    "backgroundColor": "#0000ff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#36ab60",
+    "navigationBarTitleText": "下单",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/order/order",
+        "text": "下单",
+        "iconPath": "assets/images/order.png",
+        "selectedIconPath": "assets/images/order_active.png"
+      },
+      {
+        "pagePath": "pages/receiving/receivingr",
+        "text": "接单",
+        "iconPath": "assets/images/receive.png",
+        "selectedIconPath": "assets/images/receive_active.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史记录",
+        "iconPath": "assets/images/history.png",
+        "selectedIconPath": "assets/images/history_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "assets/images/me.png",
+        "selectedIconPath": "assets/images/me_active.png"
+      }
+    ]
+  }
+}

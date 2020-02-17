@@ -1,0 +1,17 @@
+<!-- 模板设置 单选 -->
+<radio-group>
+  <view class="items" wx:for="{{temps}}" wx:key="index">
+    <view class="top">
+      <view class="title">
+        <image class="yz" src="../../../../assets/images/icon_yz.png"></image>
+        <text>邮政EMS</text>
+      </view>
+      <text class="content">邮政电子面单-网点两联3.0</text>
+      <image class="wrap" src="../../../../assets/images/icon_tpl.png"></image>
+    </view>
+    <view class="footer">
+      <radio class="radio" color="#00B366">默认模板</radio>
+      <text class="preview" bindtap="preview">预览</text>
+    </view>
+  </view>
+</radio-group>

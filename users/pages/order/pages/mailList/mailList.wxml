@@ -1,0 +1,78 @@
+<!--pages/order/pages/mailList/mailList.wxml-->
+<view>
+  <!-- 搜索区域 -->
+  <view class="mail-list-search d-flex f-center">
+    <view class="mail-list-search-inner d-flex v-center">
+      <image class="mail-list-search-img" src="../../../../assets/images/search.png"></image>
+      <input class="weui-input mail-list-search-input" placeholder="请输入姓名电话" confirm-type="搜索" bindconfirm="serach"/>
+    </view>
+  </view>
+  <!-- 列表区域 -->
+  <view class="mail-list-container">
+    <!-- 列表循环 -->
+    <block wx:for="{{dataList}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+      <view class="mail-list-item">
+        <view class="mail-list-item-info border-bottom-1rpx">
+          <view class="mail-list-item-title">
+            {{item.receiverLinker}}
+            {{item.receiverMobile}}
+          </view>
+          <view class="mail-list-item-address">
+            {{item.receiverAddr}}
+          </view>
+        </view>
+        <view class="mail-list-item-function d-flex both-sides">
+          <radio class="radio mail-item-radio" checked="{{defaultRadioIndex === index ? true : false}}" data-index="{{index}}" data-item="{{item}}" bindtap="setDefault">
+            <text>设置为默认地址</text>
+          </radio>
+          <!-- <checkbox class="checkbox mail-item-checkbox" checked="{{checkboxObj[index]}}" data-index="{{index}}" data-item="{{item}}" bindtap="setDefault"/> -->
+          <!-- <text class="checkbox-label">设置为默认地址</text> -->
+          <view class="mail-item-func d-flex">
+            <view class="d-flex v-center func-edit" data-index="{{index}}" data-item="{{item}}" bindtap="editItem">
+              <image class="mail-item-func-icon" src="../../../../assets/images/icon_edit.png"></image>
+              编辑
+            </view>
+            <view class="d-flex v-center func-del" data-index="{{index}}" data-item="{{item}}" bindtap="deleteItem">
+              <image class="mail-item-func-icon" src="../../../../assets/images/icon_del.png"></image>
+              删除
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <!-- 无数据了 -->
+    <!-- 列表 下拉刷新 动画 -->
+    <view class="hot-box-top" hidden="{{!refreshhidden}}">
+        <view class="weui-loadmore">
+          <view class="weui-loading"></view>
+          <view class="weui-loadmore__tips">正在刷新...</view>
+        </view>
+    </view>
+    <!-- 列表 上拉加载更多 动画 -->
+    <view class="hot-box-more">
+        <view wx:if="{{!loadmorehidden}}">
+          <view class="weui-loadmore">
+              <view class="weui-loading"></view>
+              <view class="weui-loadmore__tips">加载更多...</view>
+          </view>
+        </view>
+        <view wx:else>
+          <text> 没有更多了 </text>
+        </view>
+    </view>
+    <!-- <view class="no-more">没有更多了</view> -->
+    <!-- 占位 -->
+    <view style="height: 120rpx;"></view>
+  </view>
+  <!-- 按钮区域 -->
+  <view class="mail-list-add d-flex flex-center fixed-bottom">
+    <button type="primary" class="mail-list-button" bindtap="addAddress">
+      +新增地址
+    </button>
+  </view>
+  <!-- dialog -->
+  <mp-dialog show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>确定要删除该地址吗？</view>
+  </mp-dialog>
+</view>
+<!-- <text>pages/order/pages/mailList/mailList.wxml</text> -->

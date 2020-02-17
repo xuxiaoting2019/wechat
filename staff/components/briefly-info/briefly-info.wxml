@@ -1,0 +1,15 @@
+
+<view class="briefly-info-box">
+  <view wx:for="{{ list }}" wx:for-item="item" class="briefly-info d-flex">
+    <view class="info-head d-flex">
+      <text wx:if="{{item.firstName}}" class="head" style="background:{{item.bgColor}};">{{item.firstName}}</text>
+    </view>
+    <view class="info-box">
+      <view wx:for="{{ item.listItem }}" wx:for-item="child" class="d-flex">
+        <view class="info-key b14">{{ child.key }}</view>
+        <text class="key-mark b14">：</text>
+        <view class="info-value b14">{{ child.value }}</view>
+      </view>
+    </view>
+  </view>
+</view>

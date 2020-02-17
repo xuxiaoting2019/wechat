@@ -1,0 +1,52 @@
+<!-- 接单 -->
+<view class="recevice-index">
+  <!-- 搜索框 -->
+  <view class="head-box">
+    <view class="input-box d-flex">
+      <image src="../../assets/images/search.png" class="input-sousuo"></image>
+      <input type="number" class="search" maxlength="{{maxlength}}" placeholder="请输入商户号" focus="{{focus}}" cursor="-2"></input>
+    </view>
+  </view>
+  <!-- tab-bar -->
+  <view class="recevice-tab  d-flex">
+    <view wx:for="{{ tabArr }}"  wx:key="{{item.value}}" class="tab-box {{ currentTab === item.value ? 'active' : '' }}" data-item="{{ item }}" bindtap="changeNav">
+      <text>{{ item.name }} </text>
+    </view>
+  </view>
+  <!-- list -->
+  <view class="recevice-list">
+    <!-- <view class="list-item">
+      <view class="address p30 d-flex">
+        <text class="address-title h40">取件地：</text>
+        <text class="address-info h40">fsdfs</text>
+      </view>
+      <view class="order-person d-flex h40 p30">
+        <view class="person-info h40 d-flex">
+          <text>杨紫</text><text>123</text>
+          <image src="../../assets/images/icon_arrow.png" class="to-image"></image>
+          <text>王思思</text>
+        </view>
+        <view class="person-call">
+          <image src="../../assets/images/icon_phone.png" class="call-image" bindtap="callToPerson"></image>
+        </view>
+      </view>
+      <view class="item-foot">
+        <block>今天 </block>
+        <view wx:if="{{ currentTab === '0' }}" class="button">
+          <button class="button-item" bindtap="refuse">拒单</button>
+          <button class="button-item" bindtap="accept">接单</button>
+        </view>
+        <view wx:if="{{ currentTab === '1' }}" class="button">
+          <button class="button-item" bindtap="print">打单</button>
+        </view>
+      </view>
+    </view> -->
+    <block wx:for="{{ dataList }}" wx:for-item="item">
+      <recevice-item item="{{item}}" todoBtns="{{todoBtns}}" bind:commentBtn="commentBtn"></recevice-item>
+    </block>
+  </view>
+  <!-- 拒单弹窗 -->
+  <!-- 弹窗 -->
+<custom-dialog ext-class="ext-class" title="确认要拒单吗？" show="{{isRefuse}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+</custom-dialog>
+</view>

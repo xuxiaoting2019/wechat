@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/checkFile/check",
+    "pages/mailFile/mail",
+    "pages/mailFile/pages/order/order",
+    "pages/check/check",
+    "pages/check/pages/checkDetail/checkDetail",
+    "pages/order/order",
+    "pages/order/pages/success/success",
+    "pages/order/pages/newAddress/newAddress",
+    "pages/order/pages/mailList/mailList",
+    "pages/logs/logs",
+    "pages/mailing/mailing",
+    "pages/user/pages/feedback/feedback",
+    "pages/user/user",
+    "pages/history/history",
+    "pages/plate/plate",
+    "pages/platePost/platePost",
+    "pages/payment/payment",
+    "pages/retrieval/retrieval",
+    "pages/retrieval/retrievalDetail/retrievalDetail",
+    "pages/receiving/receivingr",
+    "pages/receiving/receiptPage/receiptPage",
+    "pages/receiving/orderReceiving/orderReceiving",
+    "pages/receiving/collection/collection",
+    "pages/user/pages/template/template",
+    "pages/user/pages/serviceCenter/serviceCenter",
+    "pages/user/pages/mailQues/mailQues",
+    "pages/user/pages/retrievalQues/retrievalQues",
+    "pages/user/pages/qrCode/qrCode"
+  ],
+  "window": {
+    "backgroundColor": "#0000ff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00B366",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "查件",
+        "pagePath": "pages/checkFile/check",
+        "iconPath": "assets/images/chajian--_2.png",
+        "selectedIconPath": "assets/images/chajian-.png"
+      },
+      {
+        "text": "寄件",
+        "pagePath": "pages/mailFile/mail",
+        "iconPath": "assets/images/chajian--.png",
+        "selectedIconPath": "assets/images/chajian--_3.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "assets/images/me.png",
+        "selectedIconPath": "assets/images/chajian--_1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

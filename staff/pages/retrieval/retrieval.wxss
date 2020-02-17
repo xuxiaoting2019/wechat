@@ -1,0 +1,90 @@
+/* pages/retrieval/retrieval.wxss */
+@import '../../assets/style/base.wxss';
+.search-wrapper {
+  height: 320rpx;
+  margin-bottom: 21rpx;
+  background: #00B366;
+  position: relative;
+}
+.background-img {
+  width: 351rpx;
+  height: 131rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.search-block {
+  width: 623rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background: rgba(255, 255, 255, .8);
+  font-size: 28rpx;
+  position: absolute;
+  bottom: 22rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  /* padidnglef */
+}
+.search-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+input {
+  height: 100%;
+  padding-left: 105rpx;
+}
+.my-order {
+  font-size: 28rpx;
+  color: #00B366;
+  background: #fff;
+  height: 90rpx;
+}
+.order-item {
+  height: 200rpx;
+  padding: 30rpx;
+  background: #fff;
+  margin-top: 30rpx;
+  position: relative;
+}
+
+.order-item-block {
+  margin-top: 30rpx;
+}
+.order-type {
+  height: 32rpx;
+  line-height: 32rpx;
+  border-radius: 4rpx;
+  border: 1px solid #00B366;
+  color: #00B366;
+  font-size: 20rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+  padding: 0 12rpx;
+}
+.order-num,.order-time {
+  color: #999999;
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.order-status {
+  width: 297rpx;
+}
+.order-to, .order-from {
+  width: 267rpx;
+}
+.order-city-name {
+  height: 50rpx;
+  font-size: 36rpx;
+  line-height: 50rpx;
+  color: #010028;
+}
+.order-person-name {
+  height: 40rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #999999;
+}

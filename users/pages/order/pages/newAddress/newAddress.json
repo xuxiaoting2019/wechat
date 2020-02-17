@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-dialog": "../../../../components/custom-dialog/custom-dialog"
+  },
+  "navigationBarTitleText": "新增地址",
+  "enablePullDownRefresh": true,
+  "navigationBarTextStyle": "black"
+}

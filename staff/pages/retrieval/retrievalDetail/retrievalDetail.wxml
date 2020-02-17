@@ -1,0 +1,41 @@
+<!--pages/retrieval/retrievalDetail/retrievalDetail.wxml-->
+<wxzx-headerWithBack headerTitle="运单详情"></wxzx-headerWithBack>
+<view>
+  <!-- 寄件人收件人信息 -->
+  <view class="person-message">
+    <view class="person-item-block d-flex" wx:for="{{ personData }}">
+      <view class="person-type f-center">
+        {{ item.type }}
+      </view>
+      <view class="person-block">
+        <view class="person-item">
+          <text class="person-label">寄件人 :</text>{{ item.name }}
+        </view>
+        <view class="person-item">
+          <text class="person-label">电　话 :</text>{{ item.mobile }}
+        </view>
+        <view class="person-item">
+          <text class="person-label">地　址 :</text>{{ item.address }}
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 物品信息 -->
+  <view class="goods-message">
+    <view class="goods-item">
+      <text class="goods-label">物品名称 :</text>{{ goodsData.name }}
+    </view>
+    <view class="goods-item">
+      <text class="goods-label">订单编号 :</text>{{ goodsData.code }}
+    </view>
+    <view class="goods-item">
+      <text class="goods-label">当前状态 :</text>{{ goodsData.status }}
+    </view>
+  </view>
+  <!-- 快递小哥 -->
+  <view class="courier"></view>
+  <!-- 进度 -->
+  <view class="progress">
+  </view>
+</view>
+  

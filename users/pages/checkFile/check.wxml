@@ -1,0 +1,32 @@
+<view>
+  <view class="check-search">
+    <view class="check-search-banner d-flex d-column v-center">
+      <image class="check-search-img" mode="aspectFit" src="../../assets/images/bg_tupian.png" />
+      <view class="check-search-block d-flex v-center">
+        <view class="check-search-scan w-icon d-flex h-center" bindtap="scanCode">
+          <image class="check-search-icon" src="../../assets/images/sao.png" />
+        </view>
+        <view class="check-search-input flex1">
+          <input placeholder="输入运单号查询物流详情" confirm-type="done" bindinput="bindinput" bindconfirm="bindconfirm" />
+        </view>
+        <view class="check-search-glass w-icon d-flex h-center" bindtap="search">
+          <image class="check-search-icon" src="../../assets/images/search.png" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="check-tab d-flex f-center">
+    <text>我的订单</text>
+  </view>
+  <!-- 列表 -->
+  <view class="check-list">
+    <block wx:for="{{dataList}}" wx:key="{{index}}">
+      <order-item orderSuccess="{{true}}" dataObj="{{item}}" data-item="{{item}}" bindtap="goDetail"></order-item>
+    </block>
+    <!-- 没有数据了 -->
+    <view class="text-center check-list-nodata" hidden="{{!loaded}}">
+      没有更多的数据了
+    </view>
+  </view>
+</view>
+  

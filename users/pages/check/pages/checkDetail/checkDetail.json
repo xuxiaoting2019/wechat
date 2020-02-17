@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "order-progress": "../../../../components/order-progress/order-progress",
+    "briefly-info": "../../../../components/briefly-info/briefly-info",
+    "custom-button": "../../../../components/custom-button/custom-button"
+  },
+  "navigationBarTitleText": "运单详情",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh" : true
+}

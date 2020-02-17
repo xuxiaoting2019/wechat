@@ -1,0 +1,14 @@
+var state = {
+  '1': '已下单（待接单）（已支付）',
+  '2': '已取消',
+  '3': '已拒单',
+  '4': '已接单（待打单）',
+  '5': '已撤单',
+  '6': '已打单（待发货）',
+  '7': '已发货'
+}
+var OrderState = function (value) {
+  var strVal = value + ''
+  return state[strVal] ? state[strVal] : ''
+}
+module.exports.OrderState = OrderState

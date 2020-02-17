@@ -1,0 +1,223 @@
+/* pages/receiving/orderReceiving/orderReceiving.wxss */
+.order-head {
+  width:690rpx;
+  height:605rpx;
+  background:rgba(255,255,255,1);
+  padding: 30rpx;
+}
+.order-head .sender {
+  height: 178rpx;
+  border-bottom: 1rpx solid #EBEBEB;
+  display: flex;
+}
+.sender .sender-left {
+  width: 56rpx;
+  height: 56rpx;
+  background: #4F5BFF;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 56rpx;
+  font-size: 24rpx;
+  color: white;
+  margin-right: 25rpx;
+}
+.sender .sender-right {
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+.sender-right .tag {
+  color: #999999;
+  display: inline-block;
+  width: 84rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align-last:justify;
+  margin-right: 5rpx;
+}
+.sender-right .text1 {
+  margin-left: 15rpx;
+  width: 420rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.sender-right .senders {
+  display: flex;
+  margin-bottom: 14rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.sender-right .phone {
+  display: flex;
+  margin-bottom: 14rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.sender-right .addres {
+  display: flex;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.order-head .addressee {
+  height: 177rpx;
+  padding-top: 29rpx;
+  border-bottom: 1rpx solid #EBEBEB;
+}
+.order-head .article {
+  height: 188rpx;
+  padding-top: 30rpx;
+  margin-left: 81rpx;
+  border-bottom: 0rpx solid #EBEBEB;
+}
+/* 详细 */
+.order-content {
+  width:690rpx;
+  height:480rpx;
+  background:white;
+  padding: 0 30rpx;
+  margin: 20rpx 0;
+}
+.order-content-item {
+  height: 40rpx;
+  font-size: 28rpx;
+  padding: 40rpx 0 39rpx;
+  border-bottom: 1px solid #EBEBEB;
+  display: flex;
+  justify-content: space-between;
+}
+.order-content-item-left {
+  display: flex;
+}
+.order-content-item-left .tag {
+  color: #999999;
+  width: 112rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: justify;
+  text-align-last: justify;
+  margin-right: 5rpx;
+}
+.order-content-item-left .pag {
+  color: #00B366;
+  margin-left: 15rpx;
+}
+.icon-you {
+  color: #999999;
+}
+/* 收款 */
+.gathering {
+  width:750rpx;
+  height:90rpx;
+  background:rgba(0,179,102,1);
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 3000;
+}
+.gathering .money-button {
+  background:rgba(0,179,102,1);
+  color: white;
+  font-size: 36rpx;
+}
+/* 弹窗 */
+/*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  height: 610rpx;
+  width: 750rpx;
+  overflow: hidden;
+  position: fixed;
+  bottom: 90rpx;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+}
+.dialog-head {
+  height: 80rpx;
+  width: 750rpx;
+  background:rgba(0,179,102,1);
+  font-size: 32rpx;
+  color: #FFFFFF;
+  line-height: 80rpx;
+  text-align: center;
+  position: relative;
+}
+.image {
+  width: 31rpx;
+  height: 31rpx;
+  position: absolute;
+  right: 25rpx;
+  top: 25rpx;
+}
+.fs {
+  height: 80rpx;
+  background:rgba(243,244,249,1);
+  color: #999999;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+}
+.ds {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  font-size: 28rpx;
+  line-height: 90rpx;
+}
+.ds .radio-group {
+  width: 100%;
+  margin-left: 30rpx;
+  color: #999999;
+}
+.checkedcolor {
+  color: #00B366;
+}
+.ds .radio-group .items {
+  margin-right: 100rpx;
+  font-size: 28rpx;
+}
+.ds .radio-group .item {
+  margin-right: 155rpx;
+}
+.radio .wx-radio-input {
+  width: 36rpx;
+  height: 36rpx;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked {
+  /* border: none; */
+  border-color: #00B366!important;
+  background-color: #fff!important;
+  /* background-color: transparent!important; */
+  /* 居中 */
+/* 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */ 
+}
+.radio .wx-radio-input.wx-radio-input-checked::before {
+  /* 去除对号 */
+  content: ''; 
+  /* background: #fff; */
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 50%;
+  /* background: red; */
+  background-color: #00B366;
+  /* 居中 */
+  /* margin-top: 0rpx;
+  display: flex;
+  position: relative;  */
+}

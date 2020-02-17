@@ -1,0 +1,103 @@
+/* pages/index/plate/plate.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #F3F4F9;
+}
+.info {
+  width: 100%;
+  height: 837rpx;
+  background: rgba(255,255,255,1);
+}
+.header {
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 1rpx solid #EBEBEB;
+}
+.title {
+  width: 100%;
+  height: 42rpx;
+  line-height: 42rpx;
+  font-size: 30rpx;
+  border-left: 10rpx solid rgba(0,179,102,1);
+  padding-left: 12rpx;
+  margin-left: 43rpx;
+}
+.detail {
+  padding: 0 38rpx;
+}
+.content1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 388rpx;
+  border-bottom: 1rpx solid #ebebeb;
+}
+.row {
+  display: flex;
+  justify-content: flex-start;
+}
+.content2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 327rpx;
+}
+.label {
+  width: 143rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999999;
+  line-height: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding: 13rpx 0;
+}
+.datas {
+  margin-left: 25rpx;
+  height: 42rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+  color: rgba(0,0,40,1);
+  line-height: 42rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 13rpx 0;
+}
+.label text {
+  padding: 16rpx 0;
+}
+.datas text {
+  padding: 16rpx 0;
+}
+.charges {
+  width: 746rpx;
+  height: 242rpx;
+  background: rgba(255,255,255,1);
+  margin-top: 20rpx;
+}
+.detail2 {
+  padding: 0 38rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 119rpx;
+  line-height: 119rpx;
+  font-size: 28rpx;
+}
+.money {
+  color: #F81212;
+  font-size: 36rpx;
+}
+.btn {
+  width: 623rpx;
+  height: 80rpx;
+  background: rgba(0,179,102,1);
+  border-radius: 60rpx;
+  margin: 64rpx auto;
+  color: white;
+  line-height: 80rpx;
+}

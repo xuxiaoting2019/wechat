@@ -1,0 +1,65 @@
+@import '../../assets/style/base.wxss';
+/* list */
+.p30{
+  padding: 0 30rpx;
+}
+.h40{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.list-item{
+  width: 750rpx;
+  background: #FFF;
+  margin-top: 14rpx;
+  padding-top: 30rpx;
+}
+.list-item .address{
+  align-content: flex-start;
+  font-size: 28rpx;
+  color: #999999;
+  padding-bottom: 6rpx;
+}
+.list-item .order-person{
+  border-bottom: 1px solid #EBEBEB;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+.order-person .person-info{
+  font-size: 28rpx;
+  color: #000028;
+  align-items: center;
+  justify-content: flex-start;
+}
+.person-info .to-image{
+  width: 39rpx;
+  height: 20rpx;
+  padding: 0 22rpx;
+  color: #CCCCCC;
+}
+.person-call .call-image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.item-foot {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  justify-content: space-between;
+  color: #999999;
+  font-size: 24rpx;
+}
+.button-item {
+  width: 134rpx;
+  height: 54rpx;
+  margin-left: 20rpx;
+  border-radius:32rpx;
+  border:2rpx solid #999999;
+  font-size: 24rpx;
+  line-height: 54rpx;
+  color: #999999;
+}
+.button {
+  display: flex;
+}

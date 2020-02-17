@@ -1,0 +1,33 @@
+<view class="title">请选择反馈问题的类型</view>
+
+<radio-group>
+    <label class="radio">
+      <text>使用微信收款</text>
+      <radio></radio>
+    </label>
+    <label class="radio">
+      <text>其他问题</text>
+      <radio></radio>
+    </label>
+</radio-group>
+
+<view class="title">问题和建议</view>
+
+<view class="wrapper">
+    <view class="textbox">
+      <textarea type="textarea" placeholder="请描述您使用中遇到的问题和意见，若功能异常，上传页面截图能更快解决问题哦" placeholder-class="placeholder"></textarea>
+    </view>
+</view>
+
+<view class="footer">
+  <view class="tip">添加图片（选填，提供问题截图）</view>
+  <view class="picWrapper">
+    <view class="pic-box" bindtap="selectPic">
+      <image class="selectPic" src="../../../../assets/images/camera.png"></image>
+    </view>
+    <view wx:for="{{picList}}" wx:key="{{index}}" class="pic-box">
+      <image class="picture" src="{{item}}"></image>
+    </view>
+  </view>
+  <button class="submit" bindtap="submit">提交</button>
+</view>

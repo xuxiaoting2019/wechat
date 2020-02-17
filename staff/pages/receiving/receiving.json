@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "custom-dialog": "/components/custom-dialog/custom-dialog",
+    "recevice-item": "/components/recevice-item/recevice-item"
+  },
+  "navigationBarBackgroundColor": "#00B366",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

@@ -1,0 +1,55 @@
+/* pages/receiving/ReceiptPage/ReceiptPage.wxss */
+.receipt {
+  width: 100%;
+  height: 1334rpx;
+  background: #00B366;
+}
+.receipt-content {
+  width: 690rpx;
+  height: 806rpx;
+  background: #FFFFFF;
+  margin: 0 auto;
+}
+.content-head {
+  width: 100%;
+  height: 89rpx;
+  border-bottom: 1rpx solid #EBEBEB;
+  display: flex;
+  align-items: center;
+}
+.content-head .image {
+  width: 38rpx;
+  height: 40rpx;
+  margin: 0 17rpx 0 33rpx;
+}
+.content-head .text {
+  font-size: 32rpx;
+  color: #00B366;
+}
+.content-content {
+  width: 100%;
+  height: 716rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-content .content-a {
+  width: 252rpx;
+  height: 40rpx;
+  margin-top: 86rpx;
+  font-size: 28rpx;
+  color: #00B366;
+}
+.content-content .content-b {
+  width: 176rpx;
+  height: 67rpx;
+  margin-top: 14rpx;
+  font-size: 48rpx;
+  color: #00B366;
+}
+.content-content .content-c {
+  width: 320rpx;
+  height: 320rpx;
+  margin-top: 37rpx;
+  background: greenyellow;
+} 

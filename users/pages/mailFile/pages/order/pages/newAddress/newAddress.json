@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-dialog": "../../../../../../components/custom-dialog/custom-dialog"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff"
+}

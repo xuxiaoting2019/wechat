@@ -1,0 +1,68 @@
+<!--机动车号牌寄递-->
+<!-- 寄递信息 -->
+<view class="info">
+  <!-- 标题 -->
+  <view class="header">
+    <text class="title">寄递信息</text>
+  </view>
+  <!-- 详情 -->
+  <view class="detail">
+    <view class="content1">
+      <view class="row">
+        <text class="label">办理城市</text>
+        <text class="datas">
+          <text wx:for="{{registeredCity}}" wx:key="{{index}}">{{item}}</text>
+        </text>
+      </view>
+      <view class="row">
+        <text class="label">办理网点</text>
+        <text class="datas">{{handlingOutlets}}</text>
+      </view>
+      <view class="row">
+        <text class="label">车主姓名</text>
+        <text class="datas">{{ownerName}}</text>
+      </view>
+      <view class="row">
+        <text class="label">机动车牌号</text>
+        <text class="datas">{{plateNum}}</text>
+      </view>
+      <view class="row">
+        <text class="label">机动车类型</text>
+        <text class="datas">{{currentMotorType}}</text>
+      </view>
+    </view>
+    <view class="content2">
+      <view class="row">
+        <text class="label">收件人</text>
+        <text class="datas">{{receiverLinker}}</text>
+      </view>
+      <view class="row">
+        <text class="label">联系电话</text>
+        <text class="datas">{{receiverMobile}}</text>
+      </view>
+      <view class="row">
+        <text class="label">收件地区</text>
+        <text class="datas">
+          <text wx:for="{{addressee}}" wx:key="{{index}}">{{item}}</text>
+        </text>
+      </view>
+      <view class="row">
+        <text class="label">详细地址</text>
+        <text class="datas">{{receiverAddr}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 寄递费用 -->
+<view class="charges">
+  <view class="header">
+    <text class="title">寄递费用</text>
+  </view>
+  <view class="detail2">
+    <text>邮政速递服务费</text>
+    <text class="money">￥{{charges}}</text>
+  </view>
+</view>
+
+<button class="btn" bindtap="submitBtn">提交订单</button>

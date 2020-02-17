@@ -1,0 +1,166 @@
+/* pages/receiving/receivingr.wxss */
+.header {
+  width:750rpx;
+  height:120rpx;
+  background:rgba(0,179,102,1);
+}
+.header .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width:623rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  /* background:rgba(255,255,255,1); */
+  border-radius:40rpx;
+  opacity:0.8;
+  margin: 0 auto;
+}
+.input .image {
+  width: 33rpx;
+  height: 34rpx;
+  margin-left: 29rpx;
+}
+.input .search {
+  height: 60rpx;
+  line-height: 60rpx;
+  position: absolute;
+  top: 1rpx;
+  left: 73rpx;
+  font-size: 28rpx;
+}
+.nav {
+  width:750rpx;
+  height:90rpx;
+  background:white;
+  display: flex;
+  line-height: 90rpx;
+  margin-bottom: 15rpx;
+}
+.tagg {
+  min-width: 50%;
+  height: 78rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30rpx;
+}
+.nav_left {
+  color: #00B366;
+}
+.nav_right {
+  color: #999999;
+}
+.sign {
+  display: inline-block;
+  width:80rpx;
+  height:6rpx;
+  background:rgba(0,179,102,1);
+  padding-bottom:6rpx; 
+}
+.content .content_item{
+  width:750rpx;
+  height:218rpx;
+  background:rgba(255,255,255,1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+.content_item .item_head {
+  color: #999999;
+  margin-bottom: 8rpx;
+  font-size: 28rpx;
+  margin: 30rpx 0 0 30rpx;
+}
+.content_item .item_content {
+  margin-bottom: 33rpx;
+  font-size: 28rpx;
+  margin: 8rpx 30rpx 33rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.item_content_left {
+  display: flex;
+  align-items: center;
+}
+.item_content_left .image {
+  width: 38rpx;
+  height: 19rpx;
+  margin: 0 23rpx;
+}
+.images {
+  width: 40rpx;
+  height: 40rpx;
+}
+.icon-arrow-right {
+  color: #ccc;
+  margin: 0 30rpx;
+}
+.icon-dianhua {
+  float: right;
+  color: #00B366;
+}
+.content_item .item_foot {
+  line-height: 54rpx;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 30rpx 13rpx;
+}
+.button .button1,.button2 {
+  width:134rpx;
+  height:54rpx;
+  border-radius:32rpx;
+  border:2rpx solid rgba(153,153,153,1);
+  font-size: 24rpx;
+  line-height: 54rpx;
+}
+.button {
+  display: flex;
+}
+.button1 {
+  margin-right: 20rpx;
+}
+.button2 {
+  margin: 0;
+}
+.ext-class .weui-dialog {
+  width: 560rpx;
+  height: 234rpx;
+  position: relative;
+  background:rgba(255,255,255,1);
+  border-radius:4px;
+}
+.ext-class .weui-dialog__hd {
+  height: 145rpx;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.ext-class .weui-dialog__hd .weui-dialog__title {
+  margin: 0 auto;
+  font-size: 32rpx;
+  color: #666666;
+}
+.ext-class .weui-dialog__bd {
+  padding: 0;
+  margin: 0;
+  height: 0;
+  width: 0;
+}
+.ext-class .weui-dialog__ft {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 88rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+}
+.ext-class .weui-dialog__btn_default {
+  color: #999999;
+}
+.ext-class .weui-dialog__btn_primary {
+  color: #00B366;
+}

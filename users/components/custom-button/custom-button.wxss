@@ -1,0 +1,37 @@
+@import '../../assets/style/base.wxss';
+.v-center{
+    align-items: center;
+}
+.h-center{
+    justify-content: center;
+}
+.both-sides{
+    justify-content: space-between;
+}
+.d-column{
+    flex-direction: column;
+}
+.button-style{
+  border-radius: 100rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+}
+button[type=default]{
+  background-color: transparent;
+  border: 1rpx solid #00B366;
+  color: #00B366;
+}
+button[type=primary]{
+  background-color: #00B366;
+  color: #fff;
+}
+.button-hover[type=default]{
+  background-color: transparent;
+  border: 1rpx solid #00B366;
+  color: #00B366;
+}
+.button-hover[type=primary]{
+  background-color: #00B366;
+  color: #fff;
+}

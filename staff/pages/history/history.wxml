@@ -1,0 +1,39 @@
+<view class="container">
+  <!-- 历史记录页面 -->
+  <!-- 头部 -->
+  <view class="header">
+    <view class="inputWrapper">
+      <icon class="search-icon" type="search" color="rgba(0,179,102,1)" size="33rpx"></icon>
+      <input class="input" placeholder-class="input-place" type="text" placeholder="请输入商户号"></input>
+    </view>
+  </view>
+
+  <!-- tab导航条 -->
+  <view class="tabNav">
+    <text class="tabItem {{ currentTab === index ? 'tabItem-active' : '' }}" wx:for="{{ navList }}" data-current="{{ index }}"  bindtap="toggle">{{ item.name }}</text>
+    <!-- <text class="tabItem {{currentTab==0?'tabItem-active':''}}" data-current="0" bindtap="toggle">已打单</text>
+    <text class="tabItem {{currentTab==1?'tabItem-active':''}}" data-current="1" bindtap="toggle">已拒单</text>
+    <text class="tabItem {{currentTab==2?'tabItem-active':''}}" data-current="2" bindtap="toggle">已取消</text> -->
+  </view>
+  <!-- 详情 -->
+  <view class="details" wx:for="{{currentTab == 0 ? ordered : (currentTab == 1 ? rejected : canceled)}}" wx:key="index">
+    <image src="../../assets/images/icon_phone.png" class="tel" bindtap="callTo" data-tel="{{item.telephone}}"></image>
+    <view class="content">
+      <view class="address">取件地：{{item.address}}</view>
+      <view class="row">
+        <view>
+          <text>{{item.sender}}</text>
+          <text>({{item.telephone}})</text>
+          <!-- <text class="iconfont icon-arrow-right"></text> -->
+          <image src="../../assets/images/icon_arrow.png" class="icon_arrow"></image>
+          <text>{{item.receive}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="footer">
+      <text class="date">{{item.date}}</text>
+      <button bindtap="printBtn" wx:if="{{currentTab == 0}}" class="printBtn">打印</button>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,50 @@
+<!--pages/base/base.wxml-->
+<view>
+  <!-- 收寄人信息 -->
+  <view class="rowa" bindtap="num">
+  <image src="{{img}}" class="row1"></image>寄件人信息
+  <image src="{{img2}}" class="row2"></image>
+  </view>
+  <view class="rowb" bindtap="num1">
+  <image src="{{img1}}" class="row3"></image>收件人信息
+  <image src="{{img2}}" class="row4"></image>
+  </view>
+  <!-- 产品信息 -->
+  <view class="rowc" bindtap="tap1">
+  <text space="nbsp">   产品类型</text>
+
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <!-- 在这里写弹出框里面的布局 -->
+
+  <view class="chanpin">产品类型</view>
+  <radio-group class="radio" bindchange="radioChange">
+    <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+    <text>{{item.value}}</text>
+    </radio>
+  </radio-group>
+
+  <view class="queding">确定</view>
+  </view>
+  </view>
+  
+  <view class="rowd" bindtap="tap2">
+    <text space="nbsp">   物品信息</text>
+  
+    <view class="commodity_screen" bindtap="hideModal1" wx:if="{{showModalStatus1}}"></view>
+  <view animation1="{{animationData1}}" class="commodity_attr_box" wx:if="{{showModalStatus1}}">
+   <view class="chanpin">物品信息</view>
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="itemA" wx:key="name">
+  <checkbox value="{{itemA.name}}" checked="{{itemA.checked}}">{{itemA.value}}</checkbox>
+  </label>
+</checkbox-group>
+
+  <view class="queding">确定</view>
+  </view>
+
+  </view>
+  <view><radio class="rad">我已同意《快递服务协议》</radio></view>
+  <view class="submit-button" bindtap="order">下单</view>
+</view>
+

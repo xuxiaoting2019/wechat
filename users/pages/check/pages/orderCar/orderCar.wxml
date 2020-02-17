@@ -1,0 +1,116 @@
+<wxzx-headerWithBack headerTitle="运单详情"></wxzx-headerWithBack>
+<view>
+  <!-- 寄件人收件人信息 -->
+  <view class="person-message">
+    <view class="person-item-block d-flex" wx:for="{{ personData }}" wx:key="{{ index }}">
+      <view class="person-type1" wx:if="{{ index==(personData.length-2) }}">
+        {{ item.type }}
+      </view>
+      <view class="person-type2" wx:if="{{ index==(personData.length-1) }}">
+        {{ item.type }}
+      </view>
+
+      <view class="person-block">
+        <view class="person-item">
+          <text class="person-label">寄件人 :</text>{{ item.name }}
+        </view>
+        <view class="person-item">
+          <text class="person-label">电　话 :</text>{{ item.mobile }}
+        </view>
+        <view class="person-item">
+          <text class="person-label">地　址 :</text>{{ item.address }}
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 物品信息 -->
+  <view class="goods-message" wx:for="{{goodsData}}" wx:key="{{index}}">
+    <view class="goods-item">
+      <text class="goods-label">物品名称 :</text>{{ item.name }}
+    </view>
+    <view class="goods-item">
+      <text class="goods-label">订单编号 :</text>{{ item.code }}
+    </view>
+    <view class="goods-item">
+      <text class="ordering-status">当前状态 :</text> <text class="ordering-status">{{ item.status }}</text>
+    </view>
+  </view>
+  <!-- 快递小哥 -->
+  <view class="courier-person">
+    <image class="courier-img" src="../../../../assets/images/touxiang.png"></image>
+    <view wx:for="{{courierPerson}}" wx:key="{{index}}" class="person-table">
+      <text class="courier-type">快递小哥</text>
+      <view class="person-name">{{ item.name }}</view>
+    </view>
+    <view class="tel-type" bindtap="tel">
+      <image class="tel-img" src="../../../../assets/images/tel.png"></image>
+      <view>
+        <text class="tel-name">电话</text>
+      </view>
+    </view>
+  </view>
+  <!-- 进度 -->
+  <view class="progress-table" >
+    <view class="progress_table">
+      <view wx:for="{{orderProgress}}" wx:key="{{index}}" class="progress-type">
+        <!-- 订单时间 -->
+        <view class="progress-first" >
+          <view class="status-time">
+            <view class="day-status">
+              {{ item.day }}
+            </view>
+            <view class="time-status">
+              {{ item.time }}
+            </view>
+          </view>
+        </view>
+
+        <view class="second-table">
+        <!-- 图标 -->
+          <view class="progress_second">
+            <view class="progress-second">
+              <view class="tu-yuan"></view>
+              <view wx:if="{{index==(orderProgress.length-3)}}">
+                <view class="tu-xiadan"></view>
+              </view>
+              <view wx:if="{{index==(orderProgress.length-2)}}">
+                <view class="tu-xiadan"></view>
+              </view>
+            </view>
+          </view>
+          <!-- 订单状态 -->
+          <view class="progress-third" wx:if="{{index==(orderProgress.length-3)}}">
+            <view class="third-1">
+              {{ item.oderStatus }}
+            </view>
+          </view>
+          <view class="progress-third" wx:if="{{index==(orderProgress.length-2)}}">
+            <view class="third-2">
+              {{ item.oderStatus }}
+            </view>
+          </view>
+          <view class="progress-third" wx:if="{{index==(orderProgress.length-1)}}">
+            <view class="third-3">
+              {{ item.oderStatus }}
+            </view>
+          </view>
+        </view>
+
+        <!-- <view class="third-table">
+          <view class="submit-button" wx:if="{{index==(orderProgress.length-2)}}">
+            <view class="submit-button1">取消订单</view>
+            <view class="submit-button2">编辑</view>
+          </view>
+          <view>
+            <view class="shanchu-button" wx:if="{{index==(orderProgress.length-1)}}">删除</view>
+          </view>
+        </view> -->
+      </view>
+    </view>
+
+  </view> 
+
+ 
+
+</view>
+  

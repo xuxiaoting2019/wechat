@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+      "briefly-info": "../../../components/briefly-info/briefly-info"
+    },
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "接单确认",
+    "navigationBarTextStyle": "black"
+  }
